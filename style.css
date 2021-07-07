@@ -1,0 +1,54 @@
+body {
+  font-family: 'Comfortaa', cursive;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+}
+
+.clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clock .clock-face {
+  position: relative;
+  margin: 100px auto;
+  height: 30rem;
+  width: 30rem;
+  background-color: #FBE9E7;
+  border: 20px solid #C8E6C9;
+  opacity: 0.9;
+}
+
+.clock .clock-face .hand {
+  width: 45%;
+  height: 10px;
+  background: #C8E6C9;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  left: 5%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.clock .clock-face .time {
+  opacity: 1;
+  position: absolute;
+  font-size: 40px;
+  top: 80%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #C8E6C9;
+}
+/*# sourceMappingURL=style.css.map */
